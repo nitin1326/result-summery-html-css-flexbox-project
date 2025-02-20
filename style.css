@@ -1,0 +1,157 @@
+html{
+    background-color: #ECF2FF;
+}
+
+body{
+    font-family: cursive;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    width: 90%;
+    max-width: 630px;
+    height: 430px;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0.5px 5px 5px gray;
+   
+
+}
+
+.card .part-1{
+   
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to bottom,#706cea,#2f05ec);
+    border-radius: 15px;
+    color: white;
+}
+
+.card .part-1 .mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #4A26D0;
+} 
+
+.mark h1 {
+    margin: 0;
+    font-size: 3em;
+    
+}
+
+.mark p{
+    margin: 0;
+}
+
+
+
+p{
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.card .part-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+}   
+
+.card .part-2 h1{
+    margin-left: 20px;
+}
+.summary {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    background-color: #FFF6F7;
+    margin: 10px;
+    height: 50px;
+    padding: 0 15px; /* Add padding for spacing */
+    border-radius: 10px;
+}
+
+
+.summary img {
+    width: 20px; /* Adjust size if needed */
+    height: 20px;
+}
+
+.summary span {
+    flex: 1; /* Make the text take available space */
+    margin-left: 10px; /* Add spacing between image and text */
+    font-weight: bold;
+}
+
+.summary p {
+    margin: 0;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #000; /* Adjust color if needed */
+}
+.second{
+    background-color: #FFFAF4;
+    color: #FFB21E;
+}
+ .third {
+    background-color: #F2FDF9;
+    color: #08BD92;
+}
+
+.fourth{
+    background-color: #F4F4FE;
+    color: #3646DC;
+}
+
+button{
+    margin-top: 10px;
+    width: 150px;
+    background-color: #303B59;
+    padding: 5px;
+    color: white;
+    border-radius: 25px;
+  
+}
+
+
+
+@media (max-width: 650px) {
+    .card {
+        flex-direction: column; /* Stack parts on top of each other */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .card .part-1, .card .part-2 {
+        width: 100%; /* Make both parts take full width */
+    }
+
+    .card .part-1 {
+        border-radius: 15px 15px 0 0; /* Rounded corners only at the top */
+    }
+
+    .card .part-2 {
+        border-radius: 0 0 15px 15px; /* Rounded corners only at the bottom */
+        padding-bottom: 20px; /* Add spacing */
+    }
+
+
+}
